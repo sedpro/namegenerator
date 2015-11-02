@@ -1,5 +1,5 @@
 Random name generator
-#####################
+=====================
 
 This plugin generates random names for testing purposes. If you need to fill a table with random users names, emails etc., this plugin will be helpful.
 
@@ -21,7 +21,7 @@ Add this plugin in your composer.json:
 ```
 
 Post Installation
-------------
+-----------------
 In your code you can now use `\NameGenerator\Generator`
 ```php
     $generator = new \NameGenerator\Generator;
