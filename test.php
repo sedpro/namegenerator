@@ -1,8 +1,8 @@
 <?php
 
-spl_autoload_register(function ($class) {
-    return include 'src/' . preg_replace('/^NameGenerator\\\\/i', '', $class) . '.php';
-});
+//spl_autoload_register(function ($class) {
+//    return include preg_replace('/\\\\/i', DIRECTORY_SEPARATOR, $class) . '.php';
+//});
 
 $count = 100;
 
