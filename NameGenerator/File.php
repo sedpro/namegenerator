@@ -21,7 +21,7 @@ class File
 
     public function get($line)
     {
-        return $this->file[$line];
+        return ucfirst($this->file[$line]);
     }
 
     public function getRandom()
