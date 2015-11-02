@@ -22,7 +22,7 @@ Add this plugin in your composer.json:
 
 Post Installation
 ------------
-In your code you can now 
+In your code you can now use `\NameGenerator\Generator`
 ```php
     $generator = new \NameGenerator\Generator;
     $names = $generator->get(2);
