@@ -18,10 +18,9 @@ class Generator
 
     public function __construct()
     {
-        $this->lastNames = new File('data/last.txt');
-        $this->maleNames = new File('data/male.txt');
-        $this->femaleNames = new File('data/female.txt');
-
+        $this->lastNames = new File('last.txt');
+        $this->maleNames = new File('male.txt');
+        $this->femaleNames = new File('female.txt');
         $this->email = new Email();
     }
 

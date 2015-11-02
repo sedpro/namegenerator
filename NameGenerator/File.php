@@ -4,12 +4,17 @@ namespace NameGenerator;
 
 class File
 {
+    /** @var array  */
     private $file;
+
+    /** @var int Count of lines in file */
     private $count;
 
     public function __construct($file)
     {
-        $this->file = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        $dir = __DIR__ . '/../data/';
+
+        $this->file = file($dir . $file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
         $this->count = count($this->file) - 1;
     }

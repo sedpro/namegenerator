@@ -1,14 +1,14 @@
 <?php
 
-//spl_autoload_register(function ($class) {
-//    return include preg_replace('/\\\\/i', DIRECTORY_SEPARATOR, $class) . '.php';
-//});
+spl_autoload_register(function ($class) {
+    return include preg_replace('/\\\\/i', DIRECTORY_SEPARATOR, $class) . '.php';
+});
 
-$count = 100;
+$count = 10;
 
 $start = microtime(true);
 
-$nameGenerator = new NameGenerator\Generator;
+$nameGenerator = new \NameGenerator\Generator;
 
 $names = $nameGenerator->get($count);
 
