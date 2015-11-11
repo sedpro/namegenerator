@@ -59,7 +59,9 @@ class Generator
                 ? $this->maleNames->getRandom()
                 : $this->femaleNames->getRandom();
 
-            $item['last']  = $this->lastNames->getRandom();
+            $item['last'] = $this->lastNames->getRandom();
+            
+            $item['full'] = $item['first'] . ' ' . $item['last'];
 
             foreach ($additionalColumns as $column) {
                 $item[$column] = $this->$column();
